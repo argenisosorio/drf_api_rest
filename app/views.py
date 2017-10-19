@@ -33,7 +33,7 @@ class Index(TemplateView):
         y usamos el método json.loads
         """
         #data = User.objects.all().order_by('-date_joined')
-        url = 'http://192.168.12.180:8000/users/?format=json'
+        url = 'http://127.0.0.1:8000/users/?format=json'
         import urllib, json
         response = urllib.urlopen(url)
         data = json.loads(response.read())
