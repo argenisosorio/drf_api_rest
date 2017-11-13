@@ -11,9 +11,9 @@ djangorestframework
 ## Run Project
 ```
 $ pip install -r requirements.txt
+$ python manage.py makemigrations app
 $ python manage.py migrate
 $ pip manage.py createsuperuser
-$ python manage.py migrate
 $ python manage.py runserver
 ```
 
